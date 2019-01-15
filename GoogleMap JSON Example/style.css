@@ -1,0 +1,13 @@
+#divMap {
+    width: auto;
+    height: 900px;
+}
+
+#divWeather {
+    display: inline;
+    float: left;
+}
+
+#divResults {
+    padding: 10px;
+}

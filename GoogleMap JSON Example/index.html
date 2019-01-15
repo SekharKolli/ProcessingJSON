@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google JSON Example</title>
+</head>
+<body>
+     
+    <div class="container">
+        <div class="page-header">
+            <h1>Using JSON APIs - Google Geocoding, Maps & WorldWeather</h1>
+        </div>
+
+        <!-- search input -->
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control input-lg" id="txtLocation" placeholder="What's the current weather in ..." />
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg">Show Me The Weather</button>
+            </span>
+        </div>  <!-- input-group -->        
+
+        <div id="divResults">
+            <div id="divMap"></div>
+            <div id="divWeather"></div>
+        </div>
+
+    </div>
+	
+    <!-- template for use with Mustache  -->
+    <template id="mytemplate">
+
+    </template>
+    
+    <!-- jQuery JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Mustache template library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+
+    <!-- Google Maps API (library) -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- script tag for custom JS goes here -->
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>

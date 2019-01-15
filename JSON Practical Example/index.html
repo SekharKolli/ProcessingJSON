@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>JSON</title>
+	<style> 
+		img {
+			width : 300px;
+			height : 300px;
+		}
+	</style>
+</head>
+<body>
+     
+	 <h3> This page displays the Reddit Content for Rabbits </h3>
+	 
+    <div id="divResults"></div>
+    
+    <!-- template for use with Mustache  -->
+    <template id="rabbitTemplate">
+		{{#children}}
+			<img src="{{data.preview.images.0.source.url}}" 
+			     width="{{data.preview.images.0.source.width}}"
+				 height="{{data.preview.images.0.source.height}}"/>
+		{{/children}}
+	</template>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- Mustache Template library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    
+    <!-- Custom JS. This is my script. -->
+    <script type="text/javascript" src="rabbitScript.js"></script>
+	
+	
+    
+</body>
+</html>
